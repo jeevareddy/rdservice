@@ -1,7 +1,7 @@
 name: rdservice
 description: This plugin can be used to consume the RD Service of biometric device via android intents.
 version: 0.0.1
-homepage:
+homepage: https://github.com/jeevareddy/rdservice.git
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
