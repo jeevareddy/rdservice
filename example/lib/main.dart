@@ -20,28 +20,31 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    print(_platformVersion);
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
         body: SingleChildScrollView(
-          child: Column(
-            children: [
-              ElevatedButton(
-                child: const Text("Init Device"),
-                onPressed: initDevice,
-              ),
-              ElevatedButton(
-                child: const Text("Capture"),
-                onPressed: captureFromDevice,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(_platformVersion),
-              ),
-            ],
+          child: SizedBox(
+            width: double.infinity,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  child: const Text("Init Device"),
+                  onPressed: initDevice,
+                ),
+                ElevatedButton(
+                  child: const Text("Capture"),
+                  onPressed: captureFromDevice,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(_platformVersion),
+                ),
+              ],
+            ),
           ),
         ),
       ),

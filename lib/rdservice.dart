@@ -26,7 +26,6 @@ class Msf100 {
 
   static Future<RDService?> getDeviceInfo() async {
     final String? result = await _channel.invokeMethod('deviceInfo');
-    print("$result");
     if (result != null) {
       return _serilizeRDService(result);
     }
