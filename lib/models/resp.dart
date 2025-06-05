@@ -36,4 +36,18 @@ class Resp {
     nmPoints = json['nmPoints'] ?? '';
     qScore = json['qScore'] ?? '';
   }
+  Map<String, dynamic> toJson() {
+    return {
+      'errCode': errCode,
+      'errInfo': errInfo,
+      'fCount': fCount,
+      'fType': fType,
+      'iCount': iCount,
+      'iType': iType,
+      'pCount': pCount,
+      'pType': pType,
+      'nmPoints': nmPoints,
+      'qScore': qScore,
+    };
+  }
 }

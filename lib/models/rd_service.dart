@@ -14,4 +14,10 @@ class RDService {
     info = json['info'] ?? '';
     status = json['status'] ?? '';
   }
+  Map<String, dynamic> toJson() {
+    return {
+      'info': info,
+      'status': status,
+    };
+  }
 }

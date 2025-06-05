@@ -20,4 +20,13 @@ class PidData {
     hmac = json['Hmac']?['\$t'] ?? '';
     data = Data.fromJson(json['Data'] ?? {});
   }
+  Map<String, dynamic> toJson() {
+    return {
+      'Resp': resp.toJson(),
+      'DeviceInfo': deviceInfo.toJson(),
+      'Skey': skey.toJson(),
+      'Hmac': {'\$t': hmac},
+      'Data': data.toJson(),
+    };
+  }
 }

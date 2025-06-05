@@ -4,12 +4,13 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:xml2json/xml2json.dart';
 
+import 'models/skey.dart';
+
 part 'models/data.dart';
 part 'models/device_info.dart';
 part 'models/pid_data.dart';
 part 'models/rd_service.dart';
 part 'models/resp.dart';
-part 'models/skey.dart';
 
 class Msf100 {
   static final _parser = Xml2Json();
